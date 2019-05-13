@@ -1,0 +1,14 @@
+{% extends 'testing/base.html'%}
+
+{% block content%}
+{% for tag in tags %}
+
+<a href="{% url 'post_by_tag_url' slug=tag.slug %}">
+	
+	<h1 class="mt-2">
+		{{tag.title}}
+	</h1>
+
+</a>
+{% endfor %}
+{% endblock %}
