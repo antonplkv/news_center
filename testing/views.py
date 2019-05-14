@@ -73,4 +73,4 @@ def get_posts_by_author(request, author_id):
     posts = Post.objects.filter(author__id=author_id)
     
     return render (request, 'testing/index.html', context={'posts': posts,
-    				'content_name':"Посты по заданому пользователю"})
+    				'content_name': "Посты по заданому пользователю"})
